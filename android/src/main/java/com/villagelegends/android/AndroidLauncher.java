@@ -37,8 +37,8 @@ public class AndroidLauncher extends AndroidApplication {
         config.useAccelerometer = false;
         config.useCompass = false;
         config.useWakelock = true;
-        config.hideStatusBar = true;
-        config.useImmersiveMode = true;
+        // config.hideStatusBar = true;  <-- REMOVED: Caused compilation error
+        // config.useImmersiveMode = true; <-- REMOVED: Redundant with setSystemUiVisibility
         config.disableAudio = false;
         config.maxSimultaneousSounds = 16;
         config.useGL30 = false;
