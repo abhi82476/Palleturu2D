@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Village Legends 2D colour palette -->
+    <color name="ic_launcher_background">#1A0A2E</color>  <!-- Deep night purple -->
+    <color name="colorPrimary">#C0522A</color>            <!-- Terracotta red -->
+    <color name="colorPrimaryDark">#8B3A1E</color>
+    <color name="colorAccent">#F5B800</color>             <!-- Mango yellow -->
+    <color name="colorBackground">#0A0F14</color>
+    <color name="colorSurface">#1A2230</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorGold">#D4A017</color>
+    <color name="colorHealthRed">#E53935</color>
+    <color name="colorStaminaBlue">#42A5F5</color>
+    <color name="colorMoneyGold">#FFD700</color>
+    <color name="colorReputationGreen">#4CAF50</color>
+    <color name="colorTextPrimary">#F0EDE0</color>
+    <color name="colorTextSecondary">#9E9E9E</color>
+</resources>

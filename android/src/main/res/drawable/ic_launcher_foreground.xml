@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Village Legends 2D — adaptive icon foreground (placeholder).
+
+    This file was MISSING from the project, which caused the build to fail
+    with an AAPT2 "resource drawable/ic_launcher_foreground not found" error
+    (referenced from android/src/main/res/mipmap-hdpi/ic_launcher.xml).
+
+    Simple vector placeholder: a sun over a village hut on a field,
+    using the existing colour palette from values/colors.xml.
+    Replace with real artwork any time — just keep the same file name.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Field / ground -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M16,86 L92,86 L92,98 L16,98 Z" />
+
+    <!-- Sun -->
+    <path
+        android:fillColor="#F5B800"
+        android:pathData="M76,30 a9,9 0 1,0 0.01,0 Z" />
+
+    <!-- Roof -->
+    <path
+        android:fillColor="#D4A017"
+        android:pathData="M30,60 L78,60 L54,38 Z" />
+
+    <!-- Hut walls -->
+    <path
+        android:fillColor="#C0522A"
+        android:pathData="M36,60 L72,60 L72,86 L36,86 Z" />
+
+    <!-- Doorway (matches background colour for a cut-out look) -->
+    <path
+        android:fillColor="#1A0A2E"
+        android:pathData="M48,70 L60,70 L60,86 L48,86 Z" />
+
+</vector>

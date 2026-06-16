@@ -1,0 +1,54 @@
+{
+  "items": [
+    { "id": "rice_seed",       "name": "Rice Seeds",        "category": "SEED",       "basePrice": 20,  "stackable": true,  "description": "Plant on plowed soil. Grows in 48 hours." },
+    { "id": "groundnut_seed",  "name": "Groundnut Seeds",   "category": "SEED",       "basePrice": 25,  "stackable": true,  "description": "High-yield legume. Ready in 36 hours." },
+    { "id": "cotton_seed",     "name": "Cotton Seeds",      "category": "SEED",       "basePrice": 35,  "stackable": true,  "description": "Cash crop. Grows in 60 hours." },
+    { "id": "sugarcane_seed",  "name": "Sugarcane Stems",   "category": "SEED",       "basePrice": 15,  "stackable": true,  "description": "Sweet crop for Sankranti. 72 hours." },
+    { "id": "tomato_seed",     "name": "Tomato Seeds",      "category": "SEED",       "basePrice": 18,  "stackable": true,  "description": "Fast growing vegetable. 24 hours." },
+    { "id": "brinjal_seed",    "name": "Brinjal Seeds",     "category": "SEED",       "basePrice": 16,  "stackable": true,  "description": "Common vegetable. 20 hours." },
+    { "id": "chilli_seed",     "name": "Chilli Seeds",      "category": "SEED",       "basePrice": 22,  "stackable": true,  "description": "Hot and profitable. 30 hours." },
+    { "id": "onion_seed",      "name": "Onion Seeds",       "category": "SEED",       "basePrice": 18,  "stackable": true,  "description": "Market staple. 40 hours." },
+
+    { "id": "rice_bag",        "name": "Rice Bag",          "category": "CROP",       "basePrice": 45,  "stackable": true,  "description": "Sell at market for profit." },
+    { "id": "groundnut_bag",   "name": "Groundnut Bag",     "category": "CROP",       "basePrice": 60,  "stackable": true,  "description": "Good price at town market." },
+    { "id": "cotton_bag",      "name": "Cotton Bag",        "category": "CROP",       "basePrice": 80,  "stackable": true,  "description": "Premium export crop." },
+    { "id": "sugarcane_bag",   "name": "Sugarcane Bundle",  "category": "CROP",       "basePrice": 35,  "stackable": true,  "description": "Sweet bundles for the sugar mill." },
+    { "id": "tomato_bag",      "name": "Tomato Bag",        "category": "CROP",       "basePrice": 30,  "stackable": true,  "description": "Fresh tomatoes. Sell quickly." },
+    { "id": "brinjal_bag",     "name": "Brinjal Bag",       "category": "CROP",       "basePrice": 25,  "stackable": true,  "description": "Village staple vegetable." },
+    { "id": "chilli_bag",      "name": "Chilli Bag",        "category": "CROP",       "basePrice": 55,  "stackable": true,  "description": "Spicy and valuable." },
+    { "id": "onion_bag",       "name": "Onion Bag",         "category": "CROP",       "basePrice": 40,  "stackable": true,  "description": "Year-round demand." },
+
+    { "id": "hoe",             "name": "Farmer's Hoe",      "category": "TOOL",       "basePrice": 60,  "stackable": false, "description": "Plow farm plots for planting." },
+    { "id": "sickle",          "name": "Sickle",            "category": "TOOL",       "basePrice": 75,  "stackable": false, "description": "Efficient harvest tool." },
+    { "id": "watering_can",    "name": "Watering Can",      "category": "TOOL",       "basePrice": 80,  "stackable": false, "description": "Waters 1 crop plot per use." },
+    { "id": "water_bucket",    "name": "Water Bucket",      "category": "TOOL",       "basePrice": 30,  "stackable": false, "description": "Basic watering tool." },
+    { "id": "fishing_rod",     "name": "Fishing Rod",       "category": "TOOL",       "basePrice": 120, "stackable": false, "description": "Required for fishing mini-game." },
+    { "id": "fishing_bait",    "name": "Fishing Bait",      "category": "TOOL",       "basePrice": 10,  "stackable": true,  "description": "Improves catch rate." },
+
+    { "id": "pesticide",       "name": "Pesticide",         "category": "CONSUMABLE", "basePrice": 45,  "stackable": true,  "description": "Removes pests from crops." },
+    { "id": "fertiliser",      "name": "Fertiliser",        "category": "CONSUMABLE", "basePrice": 55,  "stackable": true,  "description": "Boosts crop yield by 30%." },
+    { "id": "medicine",        "name": "Medicine",          "category": "CONSUMABLE", "basePrice": 150, "stackable": true,  "description": "Restores 40 HP." },
+    { "id": "jaggery",         "name": "Jaggery Block",     "category": "CONSUMABLE", "basePrice": 20,  "stackable": true,  "description": "Traditional sweetener. Used in festivals." },
+
+    { "id": "stick",           "name": "Lathi (Stick)",     "category": "WEAPON",     "basePrice": 20,  "stackable": false, "description": "Non-lethal. +12 attack." },
+    { "id": "slingshot",       "name": "Slingshot",         "category": "WEAPON",     "basePrice": 85,  "stackable": false, "description": "Ranged stun. +8 attack, 60px range." },
+    { "id": "farming_hoe",     "name": "Iron Hoe",          "category": "WEAPON",     "basePrice": 60,  "stackable": false, "description": "Heavy swing. +10 attack." },
+
+    { "id": "petrol_can",      "name": "Petrol Can",        "category": "FUEL",       "basePrice": 90,  "stackable": true,  "description": "Refuels motorcycle, tractor, or bus." },
+    { "id": "bullock_fodder",  "name": "Bullock Fodder",    "category": "FUEL",       "basePrice": 40,  "stackable": true,  "description": "Feeds bullock for cart travel." },
+
+    { "id": "milk_can",        "name": "Milk Can",          "category": "MISC",       "basePrice": 30,  "stackable": true,  "description": "Deliver to town dairy by 8 AM." },
+    { "id": "bribe_ledger",    "name": "Bribe Ledger",      "category": "QUEST_ITEM", "basePrice": 0,   "stackable": false, "description": "Evidence of corruption. Do not sell!" },
+    { "id": "evidence_crate",  "name": "Evidence Crate",    "category": "QUEST_ITEM", "basePrice": 0,   "stackable": false, "description": "Smuggler evidence. Guard carefully." },
+    { "id": "temple_idol",     "name": "Temple Idol",       "category": "QUEST_ITEM", "basePrice": 0,   "stackable": false, "description": "Sacred idol stolen by the gang." },
+    { "id": "treasure_map",    "name": "Treasure Map",      "category": "QUEST_ITEM", "basePrice": 0,   "stackable": false, "description": "Leads to buried Zamindar's gold." },
+    { "id": "poison_sample",   "name": "Water Sample",      "category": "QUEST_ITEM", "basePrice": 0,   "stackable": false, "description": "Evidence of water supply poisoning." },
+
+    { "id": "rohu_fish",       "name": "Rohu Fish",         "category": "FISH",       "basePrice": 25,  "stackable": true,  "description": "Common river fish." },
+    { "id": "catla_fish",      "name": "Catla Fish",        "category": "FISH",       "basePrice": 30,  "stackable": true,  "description": "Large freshwater fish." },
+    { "id": "tilapia_fish",    "name": "Tilapia Fish",      "category": "FISH",       "basePrice": 22,  "stackable": true,  "description": "Fast-breeding fish." },
+    { "id": "prawn",           "name": "Prawn",             "category": "FISH",       "basePrice": 60,  "stackable": true,  "description": "High value at town market." },
+    { "id": "murrel_fish",     "name": "Murrel Fish",       "category": "FISH",       "basePrice": 45,  "stackable": true,  "description": "Medicinal fish with good price." },
+    { "id": "legendary_catfish","name":"Legendary Catfish", "category": "FISH",       "basePrice": 500, "stackable": false, "description": "20 kg monster. Village legend!" }
+  ]
+}

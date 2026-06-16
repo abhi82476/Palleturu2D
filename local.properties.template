@@ -1,0 +1,19 @@
+# local.properties - MACHINE-SPECIFIC CONFIG
+# DO NOT COMMIT THIS FILE TO VERSION CONTROL
+# Add it to .gitignore immediately
+
+# Android SDK location (update to your machine's path)
+sdk.dir=/home/YOUR_USERNAME/Android/Sdk
+# macOS: sdk.dir=/Users/YOUR_USERNAME/Library/Android/sdk
+# Windows: sdk.dir=C\:\\Users\\YOUR_USERNAME\\AppData\\Local\\Android\\Sdk
+
+# ─── Release signing (only needed for release builds) ─────────
+# Generate your keystore with:
+#   keytool -genkey -v -keystore vl2d.keystore \
+#           -alias vl2d -keyalg RSA -keysize 2048 -validity 10000
+#
+# Uncomment and fill in for release builds:
+# RELEASE_STORE_FILE=../vl2d.keystore
+# RELEASE_STORE_PASSWORD=your_keystore_password
+# RELEASE_KEY_ALIAS=vl2d
+# RELEASE_KEY_PASSWORD=your_key_password

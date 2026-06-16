@@ -1,0 +1,386 @@
+{
+  "dialogues": {
+    "dlg_elder_ramu": [
+      {
+        "id": "root",
+        "speaker": "Elder Ramu",
+        "text": "Namaste, young one! Welcome to Peddapuram. I am Elder Ramu. We have lived peacefully here for generations, but dark times are upon us.",
+        "choices": [
+          { "label": "What dark times, Elder?",       "next": "about_trouble" },
+          { "label": "Can I help the village?",        "next": "offer_quest_m01" },
+          { "label": "Tell me about the village.",     "next": "about_village" },
+          { "label": "I'll come back later.",          "next": "end" }
+        ]
+      },
+      {
+        "id": "about_trouble",
+        "speaker": "Elder Ramu",
+        "text": "A criminal gang calling themselves the Redstone Gang has been seen near our villages. Crops are being stolen, and people are afraid to go out at night.",
+        "choices": [
+          { "label": "I'll help investigate!",    "next": "offer_quest_m01" },
+          { "label": "Who are they?",             "next": "about_gang" }
+        ]
+      },
+      {
+        "id": "about_gang",
+        "speaker": "Elder Ramu",
+        "text": "Nobody knows their faces yet. They strike at night and vanish into the forest. Even the police seem unable to catch them.",
+        "choices": [
+          { "label": "I'll find out who they are.", "next": "offer_quest_m01" }
+        ]
+      },
+      {
+        "id": "offer_quest_m01",
+        "speaker": "Elder Ramu",
+        "text": "If you're willing to help, start by introducing yourself to our village. Visit the Panchayat office and come back to me. Your first step as a village protector!",
+        "choices": [
+          { "label": "I accept!",    "next": "offer_quest:m01_intro" },
+          { "label": "Not yet.",     "next": "end" }
+        ]
+      },
+      {
+        "id": "about_village",
+        "speaker": "Elder Ramu",
+        "text": "Peddapuram has our sacred temple, a fine school, a weekly market, and the best farm soil in the district. The lake to the west is full of fish. Come, explore!",
+        "choices": [
+          { "label": "Thanks, Elder!",    "next": "end" }
+        ]
+      }
+    ],
+
+    "dlg_teacher_lakshmi": [
+      {
+        "id": "root",
+        "speaker": "Lakshmi Madam",
+        "text": "Oh, a new face! Are you the farmer's child? I have heard about you. Education is the foundation of a good village. Will you attend my classes?",
+        "choices": [
+          { "label": "Yes, I will attend school.",       "next": "offer_quest:m03_school_day" },
+          { "label": "What do you teach?",               "next": "about_teaching" },
+          { "label": "Not today, Madam.",                "next": "end" }
+        ]
+      },
+      {
+        "id": "about_teaching",
+        "speaker": "Lakshmi Madam",
+        "text": "Mathematics, Telugu, science, and most importantly — how to be a responsible citizen. A good student makes a great village hero!",
+        "choices": [
+          { "label": "I'll start attending tomorrow.",   "next": "offer_quest:m03_school_day" },
+          { "label": "Very well, Madam. Goodbye.",       "next": "end" }
+        ]
+      }
+    ],
+
+    "dlg_meena": [
+      {
+        "id": "root",
+        "speaker": "Journalist Meena",
+        "text": "Ah, I have been waiting for someone trustworthy. I am Meena, investigative journalist for Vijayawada Daily. I've been tracking the Redstone Gang for six months.",
+        "choices": [
+          { "label": "What have you found?",             "next": "meena_evidence" },
+          { "label": "How can I help?",                  "next": "offer_quest:m09_corrupt_official" },
+          { "label": "Be careful. This is dangerous.",   "next": "meena_danger" }
+        ]
+      },
+      {
+        "id": "meena_evidence",
+        "speaker": "Journalist Meena",
+        "text": "A paper trail linking the gang's money to the local panchayat officer Krishnamurthy. But I need physical evidence — ledgers, photographs. That's where you come in.",
+        "choices": [
+          { "label": "I'll help you get the evidence.",  "next": "offer_quest:m09_corrupt_official" },
+          { "label": "Let me think about it.",           "next": "end" }
+        ]
+      },
+      {
+        "id": "meena_danger",
+        "speaker": "Journalist Meena",
+        "text": "I know the risks. Two of my sources have already been threatened. But the truth must come out. Will you help me?",
+        "choices": [
+          { "label": "Yes, I'm with you.",               "next": "offer_quest:m09_corrupt_official" },
+          { "label": "Not yet. Stay safe.",              "next": "end" }
+        ]
+      }
+    ],
+
+    "dlg_parvati": [
+      {
+        "id": "root",
+        "speaker": "Parvati",
+        "text": "(whispers) Oh! You startled me. Please, be quiet... those men might still be watching. I saw what happened on the night of the thefts.",
+        "choices": [
+          { "label": "Tell me what you saw.",            "next": "parvati_describe" },
+          { "label": "You are safe. I'll protect you.",  "next": "parvati_safe" }
+        ]
+      },
+      {
+        "id": "parvati_describe",
+        "speaker": "Parvati",
+        "text": "Three men with red bandanas. They came from the highway direction around 2 AM. They loaded our groundnut bags into a waiting truck. One of them I recognized — he buys chai at the town market!",
+        "choices": [
+          { "label": "Can you come to the Panchayat?",   "next": "parvati_scared" },
+          { "label": "I'll investigate the market.",     "next": "offer_quest:m05_first_theft" }
+        ]
+      },
+      {
+        "id": "parvati_safe",
+        "speaker": "Parvati",
+        "text": "Thank you. My children are inside. Please find who did this. We lost everything we harvested this season.",
+        "choices": [
+          { "label": "I promise. Tell me what you saw.", "next": "parvati_describe" }
+        ]
+      },
+      {
+        "id": "parvati_scared",
+        "speaker": "Parvati",
+        "text": "No, no! They warned us not to go to the police. But... maybe the panchayat headman can help? Please be careful.",
+        "choices": [
+          { "label": "Don't worry. I'll handle this.",   "next": "offer_quest:m05_first_theft" }
+        ]
+      }
+    ],
+
+    "dlg_headman": [
+      {
+        "id": "root",
+        "speaker": "Headman Venkat",
+        "text": "Namaste! As Panchayat headman, I urge all citizens to remain calm. The situation is being monitored. Now, what brings you here?",
+        "choices": [
+          { "label": "I want to report a theft.",        "next": "headman_theft" },
+          { "label": "What's being done about the gang?","next": "headman_gang" },
+          { "label": "Just passing by.",                 "next": "end" }
+        ]
+      },
+      {
+        "id": "headman_theft",
+        "speaker": "Headman Venkat",
+        "text": "Three farms robbed this week! This is outrageous. If you can gather evidence, I will send a formal report to the district collector. Will you investigate?",
+        "choices": [
+          { "label": "I'll investigate the crime scenes.", "next": "offer_quest:m05_first_theft" },
+          { "label": "Let me gather more information first.", "next": "end" }
+        ]
+      },
+      {
+        "id": "headman_gang",
+        "speaker": "Headman Venkat",
+        "text": "We've sent reports to the police, but they say there's insufficient evidence. We need someone to gather concrete proof. Are you up for this task?",
+        "choices": [
+          { "label": "I'll do it.",    "next": "offer_quest:m05_first_theft" },
+          { "label": "Not yet.",       "next": "end" }
+        ]
+      }
+    ],
+
+    "dlg_priest": [
+      {
+        "id": "root",
+        "speaker": "Priest Subramaniam",
+        "text": "Jay Venkateswara! May the Lord bless you, child. The temple is always open. Light a lamp, say a prayer. In these troubled times, divine grace is our strength.",
+        "choices": [
+          { "label": "I would like to pray.",            "next": "priest_pray" },
+          { "label": "Has the gang threatened the temple?", "next": "priest_threat" },
+          { "label": "Namaste, Swamiji.",                "next": "end" }
+        ]
+      },
+      {
+        "id": "priest_pray",
+        "speaker": "Priest Subramaniam",
+        "text": "Very good. A pure heart and brave action together are invincible. Receive this prasadam. (+5 HP restored)",
+        "choices": [
+          { "label": "Thank you, Swamiji.",              "next": "end" }
+        ]
+      },
+      {
+        "id": "priest_threat",
+        "speaker": "Priest Subramaniam",
+        "text": "Last week, two men came asking about the idol's gold coating. They left when I called for help. I fear they will return. The temple must be protected!",
+        "choices": [
+          { "label": "I will guard the temple.",         "next": "end" }
+        ]
+      }
+    ],
+
+    "dlg_official": [
+      {
+        "id": "root",
+        "speaker": "Officer Krishnamurthy",
+        "text": "What do you want? I am a very busy government official. Everything in this district is perfectly under control. There is no crime problem.",
+        "choices": [
+          { "label": "Three farms were robbed last night.", "next": "official_deny" },
+          { "label": "People say there is a gang here.",    "next": "official_dismiss" },
+          { "label": "Sorry to disturb you.",               "next": "end" }
+        ]
+      },
+      {
+        "id": "official_deny",
+        "speaker": "Officer Krishnamurthy",
+        "text": "Rumours! Village gossip! Those farmers probably misplaced their own goods. I suggest you go home and stop asking questions. This is official business.",
+        "choices": [
+          { "label": "Very suspicious indeed...",    "next": "end" },
+          { "label": "I'll find the truth myself.",  "next": "end" }
+        ]
+      },
+      {
+        "id": "official_dismiss",
+        "speaker": "Officer Krishnamurthy",
+        "text": "Gang? What gang? Do not spread such lies. Now get out of my office before I have you removed!",
+        "choices": [
+          { "label": "I'm watching you...",      "next": "end" }
+        ]
+      }
+    ],
+
+    "dlg_forest_officer": [
+      {
+        "id": "root",
+        "speaker": "Forest Officer",
+        "text": "Halt! These forest trails are restricted after sunset. Strange vehicle tracks have been found on the old logging road. You must be careful here.",
+        "choices": [
+          { "label": "I'm investigating the gang.",    "next": "officer_gang" },
+          { "label": "Have you seen anything suspicious?", "next": "officer_suspicious" },
+          { "label": "I'll be careful. Thank you.",   "next": "end" }
+        ]
+      },
+      {
+        "id": "officer_gang",
+        "speaker": "Forest Officer",
+        "text": "Ah, a brave young person. Two nights ago I heard engine sounds and saw torch lights near the old clearing. They scattered before I could reach them.",
+        "choices": [
+          { "label": "Can you show me on a map?",     "next": "officer_map" },
+          { "label": "Thank you for the information.","next": "end" }
+        ]
+      },
+      {
+        "id": "officer_suspicious",
+        "speaker": "Forest Officer",
+        "text": "A leopard was spotted near the school path yesterday. I have filed a report, but the children need to be escorted home until the animal relocates.",
+        "choices": [
+          { "label": "I'll escort the children home.",  "next": "offer_quest:s15_leopard" },
+          { "label": "Understood. I'll be alert.",      "next": "end" }
+        ]
+      },
+      {
+        "id": "officer_map",
+        "speaker": "Forest Officer",
+        "text": "The clearing is three kilometres north, past the banyan grove. I marked it with a white stone. But go in daytime — it's too dangerous at night alone.",
+        "choices": [
+          { "label": "Got it. I'll check tomorrow.",  "next": "end" }
+        ]
+      }
+    ],
+
+    "dlg_bus_driver": [
+      {
+        "id": "root",
+        "speaker": "Bus Driver Raju",
+        "text": "Arre! Want to go to town? My bus leaves at 8 AM and 2 PM. Costs twenty rupees. Fastest way between village and town!",
+        "choices": [
+          { "label": "Take me to town now (₹20).",    "next": "bus_travel_town" },
+          { "label": "Take me back to the village.",  "next": "bus_travel_village" },
+          { "label": "How often does the bus run?",   "next": "bus_schedule" },
+          { "label": "Not now, thanks.",              "next": "end" }
+        ]
+      },
+      {
+        "id": "bus_travel_town",
+        "speaker": "Bus Driver Raju",
+        "text": "Hop in! Next stop — Rajahmundry Town Market! Hold tight, the highway is busy today.",
+        "choices": [
+          { "label": "Let's go!",  "next": "travel:town" }
+        ]
+      },
+      {
+        "id": "bus_travel_village",
+        "speaker": "Bus Driver Raju",
+        "text": "Going back to the village? Good, dinner time soon! Twenty rupees please.",
+        "choices": [
+          { "label": "Here you go.",  "next": "travel:main_village" }
+        ]
+      },
+      {
+        "id": "bus_schedule",
+        "speaker": "Bus Driver Raju",
+        "text": "Morning at 8, afternoon at 2, evening at 6. Last bus at 9 PM. If you miss it — you walk! Ha ha!",
+        "choices": [
+          { "label": "Thanks, Raju anna!",   "next": "end" }
+        ]
+      }
+    ],
+
+    "dlg_generic_villager": [
+      {
+        "id": "root",
+        "speaker": "Villager",
+        "text": "Namaste! Life in Peddapuram is usually peaceful. These days, everyone is worried about the thefts. Please be safe, especially at night.",
+        "choices": [
+          { "label": "What have you heard?",    "next": "villager_rumour" },
+          { "label": "Goodbye.",                "next": "end" }
+        ]
+      },
+      {
+        "id": "villager_rumour",
+        "speaker": "Villager",
+        "text": "They say the gang has a hideout in the forest. My neighbour's cousin saw trucks going that way at midnight. Strange business!",
+        "choices": [
+          { "label": "Thank you for the tip.",  "next": "end" }
+        ]
+      }
+    ],
+
+    "dlg_generic_farmer": [
+      {
+        "id": "root",
+        "speaker": "Farmer",
+        "text": "Hard work in the fields, fair rains from Lord Indra, and a good price at market. That's all a farmer asks for. What can I do for you?",
+        "choices": [
+          { "label": "Tips for farming?",    "next": "farmer_tips" },
+          { "label": "Goodbye.",             "next": "end" }
+        ]
+      },
+      {
+        "id": "farmer_tips",
+        "speaker": "Farmer",
+        "text": "Always plow before planting. Water twice a day in summer. Watch for pests after rain — they come fast! Chilli and groundnut give the best prices in our market.",
+        "choices": [
+          { "label": "Very helpful! Thank you.",  "next": "end" }
+        ]
+      }
+    ],
+
+    "dlg_fisherman": [
+      {
+        "id": "root",
+        "speaker": "Fisherman",
+        "text": "Ah, a visitor to our lake! The water is clear today and the fish are active. Have you tried fishing before?",
+        "choices": [
+          { "label": "Teach me how to fish!",       "next": "fishing_tutorial" },
+          { "label": "Tell me about the lake.",     "next": "lake_info" },
+          { "label": "Just browsing. Thanks!",      "next": "end" }
+        ]
+      },
+      {
+        "id": "fishing_tutorial",
+        "speaker": "Fisherman",
+        "text": "Simple! Hold the cast button to power up, release to cast. When the bobber dips — that's a bite! Tap Attack quickly to hook it. Then hold Sprint to reel it in, keeping the bar in the green zone!",
+        "choices": [
+          { "label": "I'll try it right now!",     "next": "end" },
+          { "label": "What about the big catfish?","next": "catfish_legend" }
+        ]
+      },
+      {
+        "id": "catfish_legend",
+        "speaker": "Fisherman",
+        "text": "Ah, the legend! Old Krishnamala — a 20 kg catfish said to be 50 years old. Only appears at dawn, in the deep zone near the island. Many have tried. None have caught her!",
+        "choices": [
+          { "label": "I'll be the first!",     "next": "end" }
+        ]
+      },
+      {
+        "id": "lake_info",
+        "speaker": "Fisherman",
+        "text": "This lake feeds three villages. Rohu, catla, tilapia, prawn — all fresh. The island in the centre has old ruins. They say treasure is buried there from the Zamindar's time!",
+        "choices": [
+          { "label": "Interesting! Thank you.",  "next": "end" }
+        ]
+      }
+    ]
+  }
+}

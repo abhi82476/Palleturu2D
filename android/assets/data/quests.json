@@ -1,0 +1,343 @@
+{
+  "quests": {
+    "main": [
+      {
+        "id": "m01_intro",
+        "title": "Welcome to Peddapuram",
+        "teluguTitle": "పెద్దపురానికి స్వాగతం",
+        "description": "Arrive at the village and meet the village elder.",
+        "type": "MAIN",
+        "act": 1,
+        "moneyRequirement": 0,
+        "reputationTier": 0,
+        "objectives": [
+          { "action": "talk",  "target": "elder_ramu",       "count": 1, "label": "Talk to Elder Ramu" },
+          { "action": "visit", "target": "panchayat_office", "count": 1, "label": "Visit the Panchayat office" }
+        ],
+        "reward": { "money": 100, "reputation": 5, "item": "bicycle" },
+        "giver": "elder_ramu"
+      },
+      {
+        "id": "m02_first_harvest",
+        "title": "First Harvest",
+        "teluguTitle": "మొదటి పంట",
+        "description": "Help your father harvest the groundnut crop before sunset.",
+        "type": "MAIN",
+        "act": 1,
+        "moneyRequirement": 100,
+        "reputationTier": 0,
+        "objectives": [
+          { "action": "harvest", "target": "groundnut", "count": 10, "label": "Harvest 10 groundnut bags" },
+          { "action": "sell",    "target": "market_stall", "count": 1, "label": "Sell at the village market" }
+        ],
+        "reward": { "money": 200, "reputation": 10, "item": null },
+        "giver": "elder_ramu"
+      },
+      {
+        "id": "m03_school_day",
+        "title": "School's In Session",
+        "teluguTitle": "పాఠశాల ప్రారంభం",
+        "description": "Complete your first week at the village school.",
+        "type": "MAIN",
+        "act": 1,
+        "moneyRequirement": 200,
+        "reputationTier": 0,
+        "requiredFlag": "intro_done",
+        "objectives": [
+          { "action": "attend", "target": "school",           "count": 5, "label": "Attend school for 5 days" },
+          { "action": "talk",   "target": "teacher_lakshmi",  "count": 1, "label": "Speak with Teacher Lakshmi" }
+        ],
+        "reward": { "money": 50, "reputation": 8, "item": null },
+        "giver": "teacher_lakshmi"
+      },
+      {
+        "id": "m04_strange_smoke",
+        "title": "Strange Smoke",
+        "teluguTitle": "అనుమానాస్పద పొగ",
+        "description": "Investigate the mysterious smoke seen in the northern forest at night.",
+        "type": "MAIN",
+        "act": 1,
+        "moneyRequirement": 300,
+        "reputationTier": 0,
+        "requiredFlag": "school_complete",
+        "objectives": [
+          { "action": "visit",   "target": "forest_north",   "count": 1, "label": "Reach the northern forest" },
+          { "action": "collect", "target": "evidence_crate", "count": 1, "label": "Find the crate of evidence" },
+          { "action": "escape",  "target": "forest",         "count": 1, "label": "Escape before sunrise" }
+        ],
+        "reward": { "money": 150, "reputation": 15, "item": null },
+        "giver": "elder_ramu"
+      },
+      {
+        "id": "m05_first_theft",
+        "title": "Night of Thefts",
+        "teluguTitle": "దొంగతనాల రాత్రి",
+        "description": "Three farms were robbed overnight. Investigate and report your findings.",
+        "type": "MAIN",
+        "act": 1,
+        "moneyRequirement": 300,
+        "reputationTier": 1,
+        "objectives": [
+          { "action": "investigate", "target": "crime_scene",      "count": 3, "label": "Investigate 3 crime scenes" },
+          { "action": "talk",        "target": "witness_parvati",  "count": 1, "label": "Talk to witness Parvati" },
+          { "action": "deliver",     "target": "report_panchayat", "count": 1, "label": "Report findings to Panchayat" }
+        ],
+        "reward": { "money": 300, "reputation": 20, "item": null },
+        "giver": "headman_venkat"
+      },
+      {
+        "id": "m06_gang_spotted",
+        "title": "Gang Spotted",
+        "teluguTitle": "గ్యాంగ్ కనుగొన్నారు",
+        "description": "The Redstone Gang has been seen near the highway. Follow them.",
+        "type": "MAIN",
+        "act": 1,
+        "moneyRequirement": 400,
+        "reputationTier": 1,
+        "objectives": [
+          { "action": "tail",        "target": "gang_thug_01", "count": 1, "label": "Follow a gang member unseen" },
+          { "action": "photograph",  "target": "hideout",      "count": 1, "label": "Locate and photograph the hideout" }
+        ],
+        "reward": { "money": 250, "reputation": 25, "item": null },
+        "giver": "elder_ramu"
+      },
+      {
+        "id": "m07_temple_robbery",
+        "title": "Temple in Danger",
+        "teluguTitle": "గుడి ప్రమాదంలో",
+        "description": "The gang is planning to steal the sacred temple idol. Defend it through the night.",
+        "type": "MAIN",
+        "act": 1,
+        "moneyRequirement": 500,
+        "reputationTier": 1,
+        "requiredFlag": "gang_known",
+        "objectives": [
+          { "action": "defend",  "target": "temple",       "count": 1, "label": "Defend the temple through the night" },
+          { "action": "defeat",  "target": "gang_thug",    "count": 5, "label": "Defeat 5 gang thugs" },
+          { "action": "recover", "target": "temple_idol",  "count": 1, "label": "Recover the stolen idol" }
+        ],
+        "reward": { "money": 500, "reputation": 30, "item": "motorcycle" },
+        "giver": "priest_subramaniam",
+        "setsFlag": "temple_saved"
+      },
+      {
+        "id": "m28_final_boss",
+        "title": "Face of Evil",
+        "teluguTitle": "చెడు ముఖం",
+        "description": "Confront the Smuggler Chief Narayana Rao at the town centre for a final showdown.",
+        "type": "MAIN",
+        "act": 3,
+        "moneyRequirement": 4200,
+        "reputationTier": 8,
+        "objectives": [
+          { "action": "defeat",  "target": "boss_narayana",          "count": 1, "label": "Defeat Narayana Rao" },
+          { "action": "protect", "target": "villagers_boss_fight",   "count": 1, "label": "Keep bystanders safe" }
+        ],
+        "reward": { "money": 5000, "reputation": 250, "item": null },
+        "giver": null,
+        "requiredFlag": "chief_exposed"
+      },
+      {
+        "id": "m30_village_hero",
+        "title": "Village Legend",
+        "teluguTitle": "గ్రామ వీరుడు",
+        "description": "Return to Peddapuram as its celebrated hero on Ugadi day. The village celebrates!",
+        "type": "MAIN",
+        "act": 3,
+        "moneyRequirement": 5000,
+        "reputationTier": 8,
+        "requiredFlag": "game_complete",
+        "objectives": [
+          { "action": "attend", "target": "celebration",    "count": 1, "label": "Attend the village celebration" },
+          { "action": "talk",   "target": "all_quest_givers","count": 8, "label": "Speak with all 8 story characters" }
+        ],
+        "reward": { "money": 0, "reputation": 500, "item": null },
+        "giver": "elder_ramu",
+        "setsFlag": "game_complete"
+      }
+    ],
+
+    "side": [
+      {
+        "id": "s01_rice_harvest",
+        "title": "Golden Rice",
+        "teluguTitle": "బంగారు వరి",
+        "description": "Grow and sell 50 bags of premium rice for the market.",
+        "type": "SIDE",
+        "moneyRequirement": 0,
+        "reputationTier": 0,
+        "objectives": [
+          { "action": "harvest", "target": "rice",        "count": 50, "label": "Harvest 50 bags of rice" },
+          { "action": "sell",    "target": "rice_market", "count": 50, "label": "Sell 50 bags at market" }
+        ],
+        "reward": { "money": 800, "reputation": 20, "item": null },
+        "giver": "merchant_ravi"
+      },
+      {
+        "id": "s04_big_fish",
+        "title": "Legend of the Lake",
+        "teluguTitle": "చెరువు పురాణం",
+        "description": "Catch the legendary catfish 'Old Krishnamala' said to weigh 20kg.",
+        "type": "SIDE",
+        "moneyRequirement": 0,
+        "reputationTier": 1,
+        "objectives": [
+          { "action": "fish", "target": "legendary_catfish", "count": 1, "label": "Catch the legendary catfish" }
+        ],
+        "reward": { "money": 600, "reputation": 25, "item": null },
+        "giver": "fisherman_0"
+      },
+      {
+        "id": "s06_tractor_race",
+        "title": "Tractor Derby",
+        "teluguTitle": "ట్రాక్టర్ పందెం",
+        "description": "Win the annual Peddapuram tractor derby on the village circuit.",
+        "type": "SIDE",
+        "moneyRequirement": 0,
+        "reputationTier": 1,
+        "objectives": [
+          { "action": "win", "target": "tractor_race", "count": 1, "label": "Finish first in the tractor race" }
+        ],
+        "reward": { "money": 500, "reputation": 30, "item": null },
+        "giver": "merchant_ravi"
+      },
+      {
+        "id": "s08_kabaddi",
+        "title": "Kabaddi Champion",
+        "teluguTitle": "కబడ్డీ చాంపియన్",
+        "description": "Win 5 kabaddi matches to become the village champion.",
+        "type": "SIDE",
+        "moneyRequirement": 0,
+        "reputationTier": 0,
+        "objectives": [
+          { "action": "win", "target": "kabaddi_match", "count": 5, "label": "Win 5 kabaddi matches" }
+        ],
+        "reward": { "money": 300, "reputation": 20, "item": null },
+        "giver": "elder_ramu"
+      },
+      {
+        "id": "s09_cricket",
+        "title": "Village Cricket Cup",
+        "teluguTitle": "గ్రామ క్రికెట్ కప్",
+        "description": "Lead the village team to the district cricket final.",
+        "type": "SIDE",
+        "moneyRequirement": 0,
+        "reputationTier": 1,
+        "objectives": [
+          { "action": "win", "target": "cricket_match", "count": 4, "label": "Win 4 cricket matches" }
+        ],
+        "reward": { "money": 500, "reputation": 25, "item": null },
+        "giver": "teacher_lakshmi"
+      },
+      {
+        "id": "s10_milk_delivery",
+        "title": "Morning Milk Run",
+        "teluguTitle": "ఉదయం పాల పంపిణీ",
+        "description": "Collect and deliver 5 milk cans to the town dairy before 8 AM.",
+        "type": "SIDE",
+        "moneyRequirement": 0,
+        "reputationTier": 0,
+        "objectives": [
+          { "action": "deliver", "target": "milk_can", "count": 5, "label": "Deliver 5 milk cans before 8 AM" }
+        ],
+        "reward": { "money": 200, "reputation": 10, "item": null },
+        "giver": "merchant_ravi"
+      },
+      {
+        "id": "s12_old_map",
+        "title": "Ancient Treasure",
+        "teluguTitle": "పురాతన నిధి",
+        "description": "Follow the old map and find the Zamindar's buried treasure on the lake island.",
+        "type": "SIDE",
+        "moneyRequirement": 0,
+        "reputationTier": 2,
+        "objectives": [
+          { "action": "find", "target": "ancient_treasure_1", "count": 1, "label": "Find treasure location 1" },
+          { "action": "find", "target": "ancient_treasure_2", "count": 1, "label": "Find treasure location 2" },
+          { "action": "dig",  "target": "final_treasure",     "count": 1, "label": "Unearth the Zamindar's treasure" }
+        ],
+        "reward": { "money": 2000, "reputation": 50, "item": null },
+        "giver": "fisherman_0"
+      },
+      {
+        "id": "s14_wild_boar",
+        "title": "Boar Problem",
+        "teluguTitle": "అడవి పంది సమస్య",
+        "description": "A wild boar is destroying crops. Drive it away without harming it.",
+        "type": "SIDE",
+        "moneyRequirement": 0,
+        "reputationTier": 0,
+        "objectives": [
+          { "action": "scare", "target": "wild_boar", "count": 1, "label": "Drive away the wild boar" }
+        ],
+        "reward": { "money": 250, "reputation": 12, "item": null },
+        "giver": "farmer_0"
+      },
+      {
+        "id": "s15_leopard",
+        "title": "Spotted Danger",
+        "teluguTitle": "చిరుత ప్రమాదం",
+        "description": "A leopard was spotted near the school forest path. Escort the children home safely.",
+        "type": "SIDE",
+        "moneyRequirement": 100,
+        "reputationTier": 1,
+        "objectives": [
+          { "action": "escort", "target": "school_children",  "count": 1, "label": "Escort children home safely" },
+          { "action": "report", "target": "forest_officer",   "count": 1, "label": "Report sighting to forest officer" }
+        ],
+        "reward": { "money": 300, "reputation": 20, "item": null },
+        "giver": "teacher_lakshmi"
+      },
+      {
+        "id": "s16_sankranti",
+        "title": "Sankranti Sweets",
+        "teluguTitle": "సంక్రాంతి మిఠాయిలు",
+        "description": "Collect ingredients and prepare traditional Pongal sweets for the festival.",
+        "type": "FESTIVAL",
+        "moneyRequirement": 0,
+        "reputationTier": 0,
+        "requiredFlag": "sankranti_active",
+        "objectives": [
+          { "action": "collect", "target": "jaggery",      "count": 5,  "label": "Collect 5 jaggery blocks" },
+          { "action": "collect", "target": "rice_bag",     "count": 10, "label": "Collect 10 rice bags" },
+          { "action": "craft",   "target": "pongal",       "count": 20, "label": "Cook 20 bowls of Pongal" }
+        ],
+        "reward": { "money": 400, "reputation": 25, "item": null },
+        "giver": "elder_ramu"
+      },
+      {
+        "id": "s17_kite_contest",
+        "title": "Kite King",
+        "teluguTitle": "గాలిపటం రాజు",
+        "description": "Win the Sankranti kite-flying contest against village champions.",
+        "type": "FESTIVAL",
+        "moneyRequirement": 0,
+        "reputationTier": 0,
+        "requiredFlag": "sankranti_active",
+        "objectives": [
+          { "action": "win", "target": "kite_contest", "count": 1, "label": "Win the kite competition" }
+        ],
+        "reward": { "money": 200, "reputation": 15, "item": null },
+        "giver": "teacher_lakshmi"
+      }
+    ]
+  },
+
+  "questTypes": {
+    "MAIN":     { "colour": "#FFD700", "icon": "quest_main" },
+    "SIDE":     { "colour": "#00E5FF", "icon": "quest_side" },
+    "FESTIVAL": { "colour": "#FF69B4", "icon": "quest_festival" },
+    "RACE":     { "colour": "#FF6600", "icon": "quest_race" },
+    "DELIVERY": { "colour": "#90EE90", "icon": "quest_delivery" }
+  },
+
+  "reputationTiers": [
+    { "tier": 0, "minRep": -999, "label": "Outlaw",   "colour": "#E53935" },
+    { "tier": 1, "minRep": 0,    "label": "Neutral",  "colour": "#9E9E9E" },
+    { "tier": 2, "minRep": 20,   "label": "Known",    "colour": "#80CBC4" },
+    { "tier": 3, "minRep": 50,   "label": "Trusted",  "colour": "#AED581" },
+    { "tier": 4, "minRep": 100,  "label": "Hero",     "colour": "#4CAF50" },
+    { "tier": 5, "minRep": 200,  "label": "Guardian", "colour": "#FFF176" },
+    { "tier": 6, "minRep": 300,  "label": "Legend",   "colour": "#FFD700" }
+  ]
+}

@@ -1,0 +1,19 @@
+apply plugin: 'java-library'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+dependencies {
+    implementation "com.badlogicgames.gdx:gdx:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+    implementation 'com.google.code.gson:gson:2.10.1'
+}
+
+sourceSets {
+    main {
+        java.srcDirs = ['src/main/java']
+    }
+}

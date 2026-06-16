@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Telugu (te) localization for Village Legends 2D -->
+<resources>
+    <string name="app_name">విలేజ్ లెజెండ్స్ 2D</string>
+    <string name="loading">లోడ్ అవుతోంది…</string>
+    <string name="save_game">గేమ్ సేవ్ చేయి</string>
+    <string name="load_game">గేమ్ లోడ్ చేయి</string>
+    <string name="new_game">కొత్త గేమ్</string>
+    <string name="settings">అమరికలు</string>
+    <string name="quit">నిష్క్రమించు</string>
+    <string name="continue_game">కొనసాగించు</string>
+    <string name="music_volume">సంగీత వాల్యూమ్</string>
+    <string name="sfx_volume">ధ్వని వాల్యూమ్</string>
+    <string name="language">భాష</string>
+    <string name="health">ఆరోగ్యం</string>
+    <string name="stamina">శక్తి</string>
+    <string name="money">డబ్బు</string>
+    <string name="reputation">పేరు</string>
+    <string name="inventory">సామాను</string>
+    <string name="quests">పనులు</string>
+    <string name="map">పటం</string>
+    <string name="pause">ఆపు</string>
+    <string name="attack">దాడి</string>
+    <string name="action">చర్య</string>
+    <string name="sprint">పరిగెత్తు</string>
+    <string name="dodge">తప్పించుకో</string>
+    <!-- Crop names -->
+    <string name="crop_rice">వరి</string>
+    <string name="crop_groundnut">వేరుసెనగ</string>
+    <string name="crop_cotton">పత్తి</string>
+    <string name="crop_sugarcane">చెరకు</string>
+    <string name="crop_tomato">టమాటా</string>
+    <string name="crop_brinjal">వంకాయ</string>
+    <string name="crop_chilli">మిరపకాయ</string>
+    <string name="crop_onion">ఉల్లిపాయ</string>
+    <!-- Regions -->
+    <string name="region_main_village">పెద్దపురం గ్రామం</string>
+    <string name="region_farmlands">పొలాలు</string>
+    <string name="region_forest">అడవి</string>
+    <string name="region_lake">చెరువు</string>
+    <string name="region_town">పట్టణం</string>
+    <string name="region_highway">హైవే</string>
+    <!-- Festivals -->
+    <string name="festival_sankranti">సంక్రాంతి</string>
+    <string name="festival_ugadi">ఉగాది</string>
+    <string name="festival_dasara">దసరా</string>
+    <string name="festival_deepavali">దీపావళి</string>
+    <!-- Notifications -->
+    <string name="notif_quest_complete">పని పూర్తయింది</string>
+    <string name="notif_crop_ready">పంట సిద్ధంగా ఉంది</string>
+    <string name="notif_save_success">గేమ్ సేవ్ అయింది</string>
+    <string name="notif_low_fuel">ఇంధనం తక్కువగా ఉంది</string>
+    <string name="notif_market_closed">మార్కెట్ మూసివేయబడింది</string>
+</resources>

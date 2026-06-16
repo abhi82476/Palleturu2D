@@ -1,0 +1,242 @@
+{
+  "npcs": [
+    {
+      "id":          "elder_ramu",
+      "name":        "Elder Ramu",
+      "teluguName":  "పెద్దమనిషి రాముడు",
+      "type":        "ELDER",
+      "region":      "main_village",
+      "spawnTileX":  50,
+      "spawnTileY":  60,
+      "dialogueId":  "dlg_elder_ramu",
+      "questGiver":  "m01_intro",
+      "schedule": [
+        { "startHour": 5,  "endHour": 7,  "activity": "HOME",           "targetTileX": 50, "targetTileY": 55 },
+        { "startHour": 7,  "endHour": 9,  "activity": "TEMPLE_PRAYER",  "targetTileX": 10, "targetTileY": 10 },
+        { "startHour": 9,  "endHour": 12, "activity": "WALK_TO",        "targetTileX": 55, "targetTileY": 60 },
+        { "startHour": 12, "endHour": 18, "activity": "IDLE",           "targetTileX": 55, "targetTileY": 60 },
+        { "startHour": 18, "endHour": 21, "activity": "TEMPLE_PRAYER",  "targetTileX": 10, "targetTileY": 10 },
+        { "startHour": 21, "endHour": 5,  "activity": "HOME",           "targetTileX": 50, "targetTileY": 55 }
+      ],
+      "description": "The wise village headman who guides the player.",
+      "portrait": "portrait_elder_ramu"
+    },
+    {
+      "id":          "teacher_lakshmi",
+      "name":        "Lakshmi Madam",
+      "teluguName":  "లక్ష్మి మేడమ్",
+      "type":        "TEACHER",
+      "region":      "main_village",
+      "spawnTileX":  25,
+      "spawnTileY":  90,
+      "dialogueId":  "dlg_teacher_lakshmi",
+      "questGiver":  "m03_school_day",
+      "schedule": [
+        { "startHour": 6,  "endHour": 7,  "activity": "HOME",    "targetTileX": 30, "targetTileY": 85 },
+        { "startHour": 7,  "endHour": 14, "activity": "SCHOOL",  "targetTileX": 25, "targetTileY": 90 },
+        { "startHour": 14, "endHour": 18, "activity": "IDLE",    "targetTileX": 25, "targetTileY": 90 },
+        { "startHour": 18, "endHour": 21, "activity": "SHOP_STALL", "targetTileX": 80, "targetTileY": 40 },
+        { "startHour": 21, "endHour": 6,  "activity": "HOME",    "targetTileX": 30, "targetTileY": 85 }
+      ],
+      "description": "Dedicated teacher who believes in every student.",
+      "portrait": "portrait_teacher_lakshmi"
+    },
+    {
+      "id":          "journalist_meena",
+      "name":        "Meena (Journalist)",
+      "teluguName":  "మీనా (జర్నలిస్ట్)",
+      "type":        "VILLAGER",
+      "region":      "town",
+      "spawnTileX":  80,
+      "spawnTileY":  60,
+      "dialogueId":  "dlg_meena",
+      "questGiver":  "m09_corrupt_official",
+      "schedule": [
+        { "startHour": 7,  "endHour": 8,  "activity": "HOME",    "targetTileX": 90, "targetTileY": 70 },
+        { "startHour": 8,  "endHour": 20, "activity": "IDLE",    "targetTileX": 80, "targetTileY": 60 },
+        { "startHour": 20, "endHour": 7,  "activity": "HOME",    "targetTileX": 90, "targetTileY": 70 }
+      ],
+      "description": "Fearless journalist investigating gang corruption.",
+      "portrait": "portrait_meena"
+    },
+    {
+      "id":          "priest_subramaniam",
+      "name":        "Priest Subramaniam",
+      "teluguName":  "పూజారి సుబ్రహ్మణ్యం",
+      "type":        "PRIEST",
+      "region":      "main_village",
+      "spawnTileX":  10,
+      "spawnTileY":  10,
+      "dialogueId":  "dlg_priest",
+      "questGiver":  null,
+      "schedule": [
+        { "startHour": 4,  "endHour": 8,  "activity": "TEMPLE_PRAYER", "targetTileX": 10, "targetTileY": 10 },
+        { "startHour": 8,  "endHour": 11, "activity": "IDLE",          "targetTileX": 10, "targetTileY": 10 },
+        { "startHour": 11, "endHour": 13, "activity": "HOME",          "targetTileX": 12, "targetTileY": 15 },
+        { "startHour": 13, "endHour": 20, "activity": "TEMPLE_PRAYER", "targetTileX": 10, "targetTileY": 10 },
+        { "startHour": 20, "endHour": 4,  "activity": "HOME",          "targetTileX": 12, "targetTileY": 15 }
+      ],
+      "description": "Devoted priest of the village temple.",
+      "portrait": "portrait_priest"
+    },
+    {
+      "id":          "witness_parvati",
+      "name":        "Parvati",
+      "teluguName":  "పార్వతి",
+      "type":        "VILLAGER",
+      "region":      "farmlands",
+      "spawnTileX":  35,
+      "spawnTileY":  20,
+      "dialogueId":  "dlg_parvati",
+      "questGiver":  "m05_first_theft",
+      "schedule": [
+        { "startHour": 5,  "endHour": 11, "activity": "FARMING", "targetTileX": 35, "targetTileY": 20 },
+        { "startHour": 11, "endHour": 13, "activity": "HOME",    "targetTileX": 30, "targetTileY": 15 },
+        { "startHour": 13, "endHour": 17, "activity": "FARMING", "targetTileX": 35, "targetTileY": 20 },
+        { "startHour": 17, "endHour": 5,  "activity": "HOME",    "targetTileX": 30, "targetTileY": 15 }
+      ],
+      "description": "Eyewitness to the night thefts. Frightened but brave.",
+      "portrait": "portrait_parvati"
+    },
+    {
+      "id":          "headman_venkat",
+      "name":        "Headman Venkat",
+      "teluguName":  "పంచాయితీ అధ్యక్షుడు వెంకట్",
+      "type":        "OFFICIAL",
+      "region":      "panchayat",
+      "spawnTileX":  35,
+      "spawnTileY":  30,
+      "dialogueId":  "dlg_headman",
+      "questGiver":  "m05_first_theft",
+      "schedule": [
+        { "startHour": 7,  "endHour": 8,  "activity": "HOME",    "targetTileX": 40, "targetTileY": 35 },
+        { "startHour": 8,  "endHour": 18, "activity": "IDLE",    "targetTileX": 35, "targetTileY": 30 },
+        { "startHour": 18, "endHour": 21, "activity": "TEMPLE_PRAYER", "targetTileX": 10, "targetTileY": 10 },
+        { "startHour": 21, "endHour": 7,  "activity": "HOME",    "targetTileX": 40, "targetTileY": 35 }
+      ],
+      "description": "Panchayat headman, trying to keep peace in troubled times.",
+      "portrait": "portrait_headman"
+    },
+    {
+      "id":          "official_corrupt",
+      "name":        "Officer Krishnamurthy",
+      "teluguName":  "అధికారి కృష్ణమూర్తి",
+      "type":        "OFFICIAL",
+      "region":      "town",
+      "spawnTileX":  60,
+      "spawnTileY":  40,
+      "dialogueId":  "dlg_official",
+      "questGiver":  null,
+      "isHostileAfterFlag": "chief_exposed",
+      "schedule": [
+        { "startHour": 9,  "endHour": 18, "activity": "IDLE",   "targetTileX": 60, "targetTileY": 40 },
+        { "startHour": 18, "endHour": 9,  "activity": "HOME",   "targetTileX": 65, "targetTileY": 45 }
+      ],
+      "description": "A corrupt government official on the gang's payroll.",
+      "portrait": "portrait_krishnamurthy"
+    },
+    {
+      "id":          "boss_vikram",
+      "name":        "Vikram Reddy",
+      "teluguName":  "విక్రమ్ రెడ్డి",
+      "type":        "GANG_THUG",
+      "region":      "town",
+      "spawnTileX":  70,
+      "spawnTileY":  35,
+      "dialogueId":  null,
+      "questGiver":  null,
+      "isHostile":   true,
+      "isBoss":      true,
+      "health":      250,
+      "spawnAfterFlag": "gang_known",
+      "schedule": [
+        { "startHour": 0, "endHour": 24, "activity": "IDLE", "targetTileX": 70, "targetTileY": 35 }
+      ],
+      "description": "Gang lieutenant. Fights in two phases.",
+      "portrait": "portrait_vikram"
+    },
+    {
+      "id":          "boss_narayana",
+      "name":        "Narayana Rao",
+      "teluguName":  "నారాయణ రావు",
+      "type":        "SMUGGLER",
+      "region":      "town",
+      "spawnTileX":  96,
+      "spawnTileY":  80,
+      "dialogueId":  null,
+      "questGiver":  null,
+      "isHostile":   true,
+      "isBoss":      true,
+      "health":      400,
+      "spawnAfterFlag": "chief_exposed",
+      "schedule": [
+        { "startHour": 0, "endHour": 24, "activity": "IDLE", "targetTileX": 96, "targetTileY": 80 }
+      ],
+      "description": "The Smuggler Chief. Final boss of the game.",
+      "portrait": "portrait_narayana"
+    },
+    {
+      "id":          "forest_officer",
+      "name":        "Forest Officer",
+      "teluguName":  "అటవీ అధికారి",
+      "type":        "GUARD",
+      "region":      "forest",
+      "spawnTileX":  15,
+      "spawnTileY":  15,
+      "dialogueId":  "dlg_forest_officer",
+      "questGiver":  "s15_leopard",
+      "schedule": [
+        { "startHour": 7,  "endHour": 17, "activity": "WALK_TO", "targetTileX": 20, "targetTileY": 20 },
+        { "startHour": 17, "endHour": 7,  "activity": "HOME",    "targetTileX": 15, "targetTileY": 15 }
+      ],
+      "description": "Protects the forest wildlife and reports poachers.",
+      "portrait": "portrait_forest_officer"
+    },
+    {
+      "id":          "bus_driver_01",
+      "name":        "Bus Driver Raju",
+      "teluguName":  "బస్ డ్రైవర్ రాజు",
+      "type":        "BUS_DRIVER",
+      "region":      "highway",
+      "spawnTileX":  30,
+      "spawnTileY":  10,
+      "dialogueId":  "dlg_bus_driver",
+      "questGiver":  null,
+      "schedule": [
+        { "startHour": 5,  "endHour": 22, "activity": "IDLE",   "targetTileX": 30, "targetTileY": 10 },
+        { "startHour": 22, "endHour": 5,  "activity": "HOME",   "targetTileX": 25, "targetTileY": 5 }
+      ],
+      "description": "Runs the daily village-to-town bus route.",
+      "portrait": "portrait_bus_driver"
+    },
+    {
+      "id":          "merchant_ravi",
+      "name":        "Merchant Ravi",
+      "teluguName":  "వ్యాపారి రవి",
+      "type":        "MERCHANT",
+      "region":      "main_village",
+      "spawnTileX":  80,
+      "spawnTileY":  40,
+      "dialogueId":  "dlg_generic_farmer",
+      "questGiver":  "m08_market_extortion",
+      "schedule": [
+        { "startHour": 7,  "endHour": 20, "activity": "SHOP_STALL", "targetTileX": 80, "targetTileY": 40 },
+        { "startHour": 20, "endHour": 7,  "activity": "HOME",       "targetTileX": 85, "targetTileY": 45 }
+      ],
+      "description": "Village market merchant, victim of gang extortion.",
+      "portrait": "portrait_merchant"
+    }
+  ],
+
+  "gangThugDefaults": {
+    "health":      80,
+    "attackDamage": 12,
+    "detectRadius": 80,
+    "walkSpeed":   60,
+    "isHostile":   true
+  },
+
+  "ambientVillagerCount": 8,
+  "ambientFarmerCount":   6,
+  "ambientFishermanCount":4
+}
